@@ -1,4 +1,3 @@
-import myassistant
-import sys
+import openai_chat
 
-sys.exit(myassistant.main())
+openai_chat.chatbot()
