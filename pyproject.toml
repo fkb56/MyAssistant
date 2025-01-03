@@ -7,12 +7,16 @@ authors = [
 ]
 dependencies = [
     "openai>=1.58.1",
+    "python-dotenv==1.0.1",
+    "supabase>=2.11.0",
+    "pick>=2.4.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
-"myassistant" = "myassistant:main"
+"myassistant" = "myassistant:chatbot.main"
+"terminal" = "myassistant:terminal.main"
 
 [build-system]
 requires = ["hatchling"]
